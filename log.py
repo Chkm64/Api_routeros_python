@@ -6,7 +6,7 @@ ruta_mikrotik =  api.get_resource('/log')
 logs_mikro = ruta_mikrotik.get()
 
 # Imprimir datos 1 x 1
-for log un logs_mikro
+for log in logs_mikro:
   print(log)
 
 connection.disconnect()
